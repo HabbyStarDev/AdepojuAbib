@@ -1,17 +1,10 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
 export default defineConfig({
-  plugins: [
-    react({
-      // Explicitly configure for React 19
-      jsxRuntime: "automatic",
-      babel: {
-        plugins: [],
-      },
-    }),
-  ],
+  plugins: [react()],
+  
+  base: '/AdepojuAbib/', // Replace with your GitHub repository name
     server: {
     port: 5500,        // ← Change to 5500
     strictPort: true,  // Optional: Don't try another port if 5500 is busy
