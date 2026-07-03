@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 export default defineConfig({
   plugins: [react()],
   
-  base: '/AdepojuAbib/', // Replace with your GitHub repository name
+    base: '/',     // ← Use this for Netlify (and most other hosts)   
     server: {
     port: 5500,        // ← Change to 5500
     strictPort: true,  // Optional: Don't try another port if 5500 is busy
